@@ -22,7 +22,7 @@ def get_mtcars_inputs():
         ),
         ui.tags.hr(),
         ui.input_slider(
-            "MTCARS_MAX_HP",
+            "MTCARS_HP_RANGE",
             "Gross Horsepower (HP)",
             min=0,
             max=600,
