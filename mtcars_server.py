@@ -55,8 +55,8 @@ def get_mtcars_server_functions(input, output, session):
         You must be familiar with the dataset to know the column names.
         """
 
+       # filtered_df = df[(df["mpg"] >= input_min_1) & (df["mpg"] <= input_max_1) & df["hp"] >= input_min_2]
         filtered_df = df[(df["mpg"] >= input_min_1) & (df["mpg"] <= input_max_1) & df["hp"] >= input_min_2]
-
         # Set the reactive value
         reactive_df.set(filtered_df)
 
