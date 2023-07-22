@@ -21,6 +21,14 @@ def get_mtcars_inputs():
             value=[10, 35],
         ),
         ui.tags.hr(),
+        ui.input_slider(
+            "MTCARS_MAX_HP",
+            "Gross Horsepower (HP)",
+            min=0,
+            max=600,
+            value=[0, 600],
+        ),
+        ui.tags.hr(),
         ui.tags.section(
             ui.h3("MT Cars Table"),
             ui.tags.p("Description of each field in the table:"),
