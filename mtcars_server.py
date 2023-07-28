@@ -42,11 +42,7 @@ def get_mtcars_server_functions(input, output, session):
         input_range_1 = input.MTCARS_MPG_RANGE()
         input_min_1 = input_range_1[0]
         input_max_1 = input_range_1[1]
-
-        input_range_2 = input.MTCars_HP_RANGE()
-        input_min_2 = input_range_2[0]
-        input_max_2 = input_range_2[1]
-
+        
         max_hp_filter = df["max_hp"] <= input.MTCARS_MAX_HP()
         df = df[max_hp_filter]
 
